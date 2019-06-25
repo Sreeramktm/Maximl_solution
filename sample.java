@@ -9,13 +9,9 @@ class sample
         String c="";
         for(int i=0;i<a.length();i++)
         {
-        	if(c.contains(String.valueOf(a.charAt(i))))
+        	if(!(c.contains(String.valueOf(a.charAt(i)))))
         	{
-        		break;
-        	}
-        	else
-        	{
-        		c=c+String.valueOf(a.charAt(i));
+                c=c+String.valueOf(a.charAt(i));
         	}
         }
         System.out.print(c.length());
